@@ -11,3 +11,5 @@ while read package; do
   echo "Attempting to remove package:" $package
   apt-get remove $package -y
 done < $ROOT/training/removepackages.txt
+
+apt autoremove -y
