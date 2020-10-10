@@ -1,4 +1,5 @@
 ﻿$pathToFile = "c:\\users\\lsnart\\Desktop\\Cold Research.txt"
+$user = $env:USERNAME
 $answerFile = "c:\\users\\$user\\Desktop\\Forensics Question 2.txt"
 
 # Get the ACL of the file

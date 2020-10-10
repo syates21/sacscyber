@@ -1,4 +1,5 @@
 ﻿$encodedString = "WW91IGFyZSBjeWJlciBkZWZlbmRlcnM="
+$user = $env:USERNAME
 $answerFile = "c:\\users\\$user\\Desktop\\Forensics Question 3.txt"
 
 # Decode string using .NET classes
