@@ -1,0 +1,1 @@
+﻿Set-ItemProperty -Path HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name DisableCAD -Value 0

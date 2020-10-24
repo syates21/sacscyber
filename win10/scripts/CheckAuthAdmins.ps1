@@ -1,5 +1,5 @@
 ﻿$specialUsers = @("Administrator")
-$authAdmins = Get-Content ..\training\authadmins.txt
+$authAdmins = Get-Content ..\practice\authadmins.txt
 $currentAdmins = Get-LocalGroupMember "Administrators"
 
 # Append the special users to our list of authorized admins

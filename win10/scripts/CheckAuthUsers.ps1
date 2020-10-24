@@ -1,7 +1,7 @@
-﻿$specialusers = @("Administrator", "DefaultAccount", "defaultuser0", "Guest")
+﻿$specialusers = @("Administrator", "DefaultAccount", "defaultuser0", "Guest", "WDAGUtilityAccount")
 $localusers = Get-LocalUser|select Name
-$authusers = Import-Csv ..\training\authusers.txt
-$authusers += Import-Csv ..\training\authadmins.txt
+$authusers = Import-Csv ..\practice\authusers.txt
+$authusers += Import-Csv ..\practice\authadmins.txt
 
 
 

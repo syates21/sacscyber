@@ -1,4 +1,4 @@
-﻿$specialusers = @("Administrator", "DefaultAccount", "defaultuser0", "Guest")
+﻿$specialusers = @("Administrator", "DefaultAccount", "defaultuser0", "Guest", "WDAGUtilityAccount")
 $userName = $env:USERNAME
 
 $specialusers += $userName
