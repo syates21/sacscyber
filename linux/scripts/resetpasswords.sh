@@ -2,6 +2,7 @@
 
 ROOT=~/sacscyber/linux
 SCRATCH=$ROOT/scratch
+DONTCHANGEUSER=$1
 
 # Make a working directory only if it doesn't exist
 mkdir -p $SCRATCH
@@ -18,7 +19,7 @@ echo $newpw
 
 # Reset password for everyone but ballen
 while read user; do
-  if [ $user = "ballen" ]
+  if [ $user = $DONTCHANGEUSER ]
   then
     echo "Skipping password reset for:" $user 
   else
