@@ -10,6 +10,6 @@ mkdir -p $SCRATCH
 while read package; do
   echo "Attempting to remove package:" $package
   apt-get remove $package -y
-done < $ROOT/practices/removepackages.txt
+done < $ROOT/training/removepackages.txt
 
 apt autoremove -y

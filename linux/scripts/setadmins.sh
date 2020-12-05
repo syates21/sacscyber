@@ -10,7 +10,7 @@ mkdir -p $SCRATCH
 getent group sudo|cut -f4 -d:|tr ',' '\n'|sort > $SCRATCH/startadminusers.txt
 
 # Sort valid admin users
-cat $ROOT/practice/adminusers.txt | sort > $SCRATCH/sortedadminusers.txt
+cat $ROOT/training/adminusers.txt | sort > $SCRATCH/sortedadminusers.txt
 
 # Get users that should be admins (sortedadminusers) but aren't already (startadminusers.txt)
 adminstoadd=$(comm -13 $SCRATCH/startadminusers.txt $SCRATCH/sortedadminusers.txt)
